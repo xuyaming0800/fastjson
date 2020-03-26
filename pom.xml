@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.alibaba</groupId>
 	<artifactId>fastjson</artifactId>
-	<version>1.2.67</version>
+	<version>1.2.67-ksyun</version>
 
 	<packaging>jar</packaging>
 	<name>fastjson</name>
@@ -652,4 +652,16 @@
 		</profile>
 
 	</profiles>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>ksyun-fastjson</name>
+            <url>http://10.69.58.191:8081/repository/maven-snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>release</id>
+            <name>ksyun-fastjson</name>
+            <url>http://10.69.58.191:8081/repository/maven-releases/</url>
+        </repository>
+    </distributionManagement>
 </project>

@@ -137,9 +137,12 @@ public class JSONObject extends JSON implements Map<String, Object>, Cloneable, 
             return (JSONArray) value;
         }
 
-        if (value instanceof List) {
-            return new JSONArray((List) value);
-        }
+        /**
+         * 现有业务存在强制转换的问题 这个方式注释下
+         */
+//        if (value instanceof List) {
+//            return new JSONArray((List) value);
+//        }
 
         if (value instanceof String) {
             return (JSONArray) JSON.parse((String) value);
